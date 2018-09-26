@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <style>
+        .app {
+            font-family: sans-serif;
+            font-size: 16px;
+            margin: 0 auto;
+            padding: 20px;
+            width: 600px;
+        }
+
+
+
+        .app p {
+            margin-bottom: 0;
+        }
+
+        .inputContainer {
+            background-color: #eee;
+            border-bottom: 2px solid #ddd;
+            margin: 0 0 20px;
+            padding: 20px 40px;
+        }
+
+        #movieTextInputField {
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            font-size: 16px;
+            margin: 20px 0;
+            padding: 15px 20px;
+            width: 100%;
+        }
+
+        .addMovieBtn {
+            background-color: #dedede;
+            border: 0 none;
+            cursor: pointer;
+            display: block;
+            font-size: 16px;
+            padding: 15px;
+            width: 22%;
+        }
+
+        .resultsContainer {
+            margin-top: 40px;
+        }
+
+        .comicBookList {
+            margin-left: 0;
+            padding-left: 0;
+            list-style: none;
+        }
+
+        .comicBookList li {
+            padding: 15px 0;
+            border-bottom: 2px solid #eee;
+            margin: 10px 0;
+        }
+
+        .comicBookList li:hover {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <button type="button" onclick="checkForSpawn()">click me</button>-->
+    <!-- <button type="button" onclick="checkForSpawn()">click me</button>-->
+    <div class="app">
+        <h1>Best Comic Book Movies</h1>
+
+        <div class="inputContainer">
+            <p>Enter a movie title below and click "Add Movie"</p>
+            <input type="text" id="movieTextInputField" placeholder="Enter a movie title">
+            <button type="submit" id="addMovieBtn" class="addMovieBtn" onclick="addMovieFunction()">Add Movie</button>
+        </div>
+
+        <div class="resultsContainer">
+            <h2 id="title">Results</h2>
+
+            <div id="combinedMoviesContainer"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
